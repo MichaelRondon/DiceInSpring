@@ -33,7 +33,7 @@ Body: A continuación un ejemplo para la petición.
 
 
 
-Respuesta:
+Respuesta: A continuación un ejemplo para la respuesta.
 
 <code>
 {
