@@ -1,3 +1,5 @@
+package com.mfra.dice;
+
 
 import com.mfra.dice.Dice;
 import org.junit.Test;

@@ -71,6 +71,14 @@ public class Dice {
         return this;
     }
 
+    public Dice roll(DiceDTO diceDTO) {
+        this.faces = diceDTO.getFaces();
+        this.repetitions = diceDTO.getRepetitions();
+        this.modifier = diceDTO.getModifier();
+        this.name = diceDTO.getName();
+        return roll();
+    }
+
     /**
      * @return
      */
