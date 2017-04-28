@@ -16,7 +16,7 @@ Mediante una herramienta para el consumo de servicios REST se puede probar la ap
 
 Endpoint: http://[HOST]:[PUERTO]/app/dice
 
-Metodo: POST
+Método: POST
 
 Content-Type: application/json
 
