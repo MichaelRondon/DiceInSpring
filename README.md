@@ -13,6 +13,7 @@ Uso:
   
 Peticiones:
 Mediante una herramienta para el consumo de servicios REST se puede probar la aplicación.
+
 Endpoint: http://[HOST]:[PUERTO]/app/dice
 Metodo:GET
 
