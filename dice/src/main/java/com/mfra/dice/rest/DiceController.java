@@ -5,9 +5,9 @@
  */
 package com.mfra.dice.rest;
 
-import com.mfra.dice.Dice;
-import com.mfra.dice.DiceDTO;
-import com.mfra.dice.DiceResponseDTO;
+import com.mfra.dice.model.Dice;
+import com.mfra.dice.model.DiceDTO;
+import com.mfra.dice.model.DiceResponseDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/app")
 public class DiceController {
 
-    @RequestMapping(value = "/dice", method = RequestMethod.GET)
+    @RequestMapping(value = "/dice", method = RequestMethod.POST)
     public ResponseEntity<DiceResponseDTO> greeting(@RequestBody DiceDTO diceDTO) {
         return new ResponseEntity(new DiceResponseDTO(Dice.getInstance().roll(diceDTO)), HttpStatus.OK);
     }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mfra.dice;
+package com.mfra.dice.model;
 
 import lombok.Data;
 
@@ -12,14 +12,13 @@ import lombok.Data;
  * @author acost
  */
 @Data
-public class DiceDTO {
-
-    private Integer modifier;
-
-    private Integer repetitions;
-
-    private Integer faces;
-
-    private String name;
+public class DiceResponseDTO {
     
+    private String text;
+    private int value;
+    
+    public DiceResponseDTO(Dice dice){
+        this.value = dice.getLastValue();
+        this.text = dice.toString();
+    }
 }

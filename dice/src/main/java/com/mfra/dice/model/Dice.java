@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mfra.dice;
+package com.mfra.dice.model;
 
+import com.mfra.dice.util.DataUtil;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
@@ -72,9 +73,9 @@ public class Dice {
     }
 
     public Dice roll(DiceDTO diceDTO) {
-        this.faces = diceDTO.getFaces();
-        this.repetitions = diceDTO.getRepetitions();
-        this.modifier = diceDTO.getModifier();
+        this.faces = DataUtil.ifNull(diceDTO.getFaces(), DEFAULT_FACES);//diceDTO.getFaces().orElse(DEFAULT_FACES);
+        this.repetitions = DataUtil.ifNull(diceDTO.getRepetitions(), DEFAULT_REPETITIONS);//diceDTO.getRepetitions().orElse(DEFAULT_REPETITIONS);
+        this.modifier = DataUtil.ifNull(diceDTO.getModifier(), DEFAULT_MODIFIER);//diceDTO.getModifier().orElse(DEFAULT_MODIFIER);
         this.name = diceDTO.getName();
         return roll();
     }
@@ -94,7 +95,7 @@ public class Dice {
         this.stringBuilder.append(Objects.nonNull(name) ? String.format("%s rolls a ", name) : "Rolls a ");
         this.stringBuilder.append((DEFAULT_FACES != faces) ? String.format("dice of %d faces ", faces) : "dice ");
         this.stringBuilder.append((DEFAULT_REPETITIONS != repetitions) ? String.format("%d times ", repetitions) : "");
-        this.stringBuilder.append((DEFAULT_MODIFIER != modifier) ? String.format("and sums %d %n", modifier) : "\n");
+        this.stringBuilder.append((DEFAULT_MODIFIER != modifier) ? String.format("and sums %d %n", modifier) : System.lineSeparator());
 
         this.stringBuilder.append((repetitions != 1)
                 ? String.format("The result were: %s. Total: %d.", collect, this.lastValue)

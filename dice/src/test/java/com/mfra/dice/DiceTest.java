@@ -1,7 +1,7 @@
 package com.mfra.dice;
 
 
-import com.mfra.dice.Dice;
+import com.mfra.dice.model.Dice;
 import org.junit.Test;
 import org.springframework.util.Assert;
 
