@@ -9,7 +9,7 @@ Uso:
 - En una terminal ir a la ruta del archivo dice-1.0.war
 - Ejecutar el siguiente comando:
 <code> java -jar -Dserver.port=[PUERTO] dice-1.0.war</code>
-  donde [PUERTO] puede ser cualquier puerto disponible para que el servidor embebido; Tomcat, levante la aplicación.
+  donde [PUERTO] puede ser cualquier puerto disponible para que el servidor Tomcat embebido levante la aplicación.
   
 Peticiones:
 Mediante una herramienta para el consumo de servicios REST se puede probar la aplicación.
