@@ -5,10 +5,10 @@ Requisitos:
 - Requere java 8
 
 Uso:
-- Descargar el archivo dice-1.0.war
-- En una terminal ir a la ruta del archivo dice-1.0.war
+- Descargar el archivo dice-1.0.jar
+- En una terminal ir a la ruta del archivo dice-1.0.jar
 - Ejecutar el siguiente comando:
-<code> java -jar -Dserver.port=[PUERTO] dice-1.0.war</code>
+<code> java -jar -Dserver.port=[PUERTO] dice-1.0.jar</code>
   donde [PUERTO] puede ser cualquier puerto disponible para que el servidor Tomcat embebido levante la aplicación.
   
 Peticiones:
