@@ -4,13 +4,19 @@ Pequeña aplicación que expone el servicio de un lanzamiento de dados. Desarrol
 Requisitos ejecución:
 - Requere java 8
 
+Requisitos de instalación:
+- Maven https://maven.apache.org/install.html
+
 Uso:
-- Descargar el contenido del repositorio
-- 
-- En una terminal ir a la ruta del archivo dice-1.0.jar
+- Descargar el contenido del repositorio.
+- Descomprimir el archivo DiceInSpring-master.zip
+- En una terminal ingresar a la ruta DiceInSpring-master\dice donde se encuentra el archivo pom.xml
+- Ejecutar el comando <code>mvn clean install package</code>
 - Ejecutar el siguiente comando:
-<code> java -jar -Dserver.port=[PUERTO] dice-1.0.jar</code>
+<code> java -jar -Dserver.port=[PUERTO] target/dice-1.0.jar</code>
   donde [PUERTO] puede ser cualquier puerto disponible para que el servidor Tomcat embebido levante la aplicación.
+- Ingresar a la ruta http://localhost:[PUERTO] en un navegador. Debe generarse una página con el mensaje Dice!
+- Para ver la firma de los servicios expuestos ingresar a http://localhost:[PUERTO]/swagger-ui.html
   
 Peticiones:
 Mediante una herramienta para el consumo de servicios REST se puede probar la aplicación.
