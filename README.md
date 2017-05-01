@@ -1,11 +1,12 @@
 # DiceInSpring
 Pequeña aplicación que expone el servicio de un lanzamiento de dados. Desarrollada en SpringBoot 
 
-Requisitos:
+Requisitos ejecución:
 - Requere java 8
 
 Uso:
-- Descargar el archivo dice-1.0.jar
+- Descargar el contenido del repositorio
+- 
 - En una terminal ir a la ruta del archivo dice-1.0.jar
 - Ejecutar el siguiente comando:
 <code> java -jar -Dserver.port=[PUERTO] dice-1.0.jar</code>
