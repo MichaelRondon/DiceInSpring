@@ -7,7 +7,7 @@ Requisitos ejecución:
 Requisitos de instalación:
 - Maven https://maven.apache.org/install.html
 
-Uso sin docker:
+Uso sin Docker:
 - Descargar el contenido del repositorio.
 - Descomprimir el archivo DiceInSpring-master.zip
 - En una terminal ingresar a la ruta DiceInSpring-master\dice donde se encuentra el archivo pom.xml
@@ -18,8 +18,8 @@ Uso sin docker:
 - Ingresar a la ruta http://localhost:[PUERTO] en un navegador. Debe generarse una página con el mensaje Dice!
 - Para ver la firma de los servicios expuestos ingresar a http://localhost:[PUERTO]/swagger-ui.html
   
-Uso con docker!!!:
-  Si se tiene instalado Docker y maven:
+Uso con Docker!!!:
+  Si se tiene instalado Docker y Maven:
   - Descargar el repositorio.
   - Ejecutar el archivo Ejecutar.bat
   
