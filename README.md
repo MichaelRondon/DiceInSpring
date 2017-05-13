@@ -20,6 +20,8 @@ Uso sin Docker:
   
 Uso con Docker!!!:
   Si se tiene instalado Docker y Maven:
+  - Descomprimir el contenido.
+  - Ingresar al directorio DiceInSpring-master\dice
   - Descargar el repositorio.
   - Ejecutar el archivo Ejecutar.bat
   
